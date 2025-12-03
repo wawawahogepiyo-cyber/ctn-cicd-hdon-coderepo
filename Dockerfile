@@ -1,4 +1,5 @@
-FROM ubuntu:18.04
+# FROM ubuntu:18.04
+FROM public.ecr.aws/docker/library/ubuntu:18.04
 
 # install dependencies
 RUN apt-get update && \
