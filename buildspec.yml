@@ -18,7 +18,7 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       # ▼ここを imageDetail.json ではなく imagedefinitions.json に変更
-      - printf '[{"name":"ctn-cicd-hdon-container","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"ctn-cicd-hdon-cont","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 
 artifacts:
   files:
